@@ -476,4 +476,10 @@
     <!-- Gaming Mode FPSInfoService FPS node file path -->
     <string name="config_gamingmode_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
 
+    <!-- QS System Info -->
+    <string name="config_cpu_temp_path">/sys/class/thermal/thermal_zone10/temp</string>
+    <string name="config_battery_temp_path">/sys/class/power_supply/battery/temp</string>
+    <string name="config_gpu_clock_path">/sys/kernel/gpu/gpu_clock</string>
+    <string name="config_gpu_busy_path">/sys/kernel/gpu/gpu_busy</string>
+
 </resources>
