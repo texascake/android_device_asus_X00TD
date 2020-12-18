@@ -1,2 +1,6 @@
+allow untrusted_app sysfs_devfreq:dir { search };
+allow untrusted_app sysfs_kgsl:file { open read getattr };
+allow untrusted_app sysfs_devfreq:file { open read getattr };
+
 # allow apps to read battery status
 r_dir_file(untrusted_app, sysfs_battery_supply)
