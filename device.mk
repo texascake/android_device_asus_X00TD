@@ -402,6 +402,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
+# RetroMusic
+PRODUCT_PACKAGES += \
+    RetroMusic
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.device.rc \
