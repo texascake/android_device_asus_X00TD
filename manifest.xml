@@ -28,11 +28,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 <manifest version="1.0" type="device" target-level="4">
     <kernel target-level="4"/>
     <hal format="hidl">
-        <name>vendor.focaltech.fingerprint</name>
+        <name>vendor.goodix.hardware.fingerprint</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IFocalFingerprintService</name>
+            <name>IGoodixBiometricsFingerprint</name>
             <instance>default</instance>
         </interface>
     </hal>

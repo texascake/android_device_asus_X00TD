@@ -7,23 +7,23 @@
 # Inherit from sdm660-common
 include device/asus/sdm660-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/asus/X01BD
+DEVICE_PATH := device/asus/X00TD
 
 # Assert
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := ASUS_X01BD,X01BD
+TARGET_OTA_ASSERT_DEVICE := ASUS_X00TD,X00TD,X00T
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := sdm660
+TARGET_BOOTLOADER_BOARD_NAME := sdm636
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := asus/X01BD_defconfig
+TARGET_KERNEL_CONFIG := asus/X00TD_defconfig
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/tpd_gesture"
 
 # Inherit the proprietary files
-include vendor/asus/X01BD/BoardConfigVendor.mk
+include vendor/asus/X00TD/BoardConfigVendor.mk

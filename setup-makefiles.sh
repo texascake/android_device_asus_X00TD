@@ -8,7 +8,7 @@
 
 set -e
 
-export DEVICE=X01BD
+export DEVICE=X00TD
 export DEVICE_COMMON=sdm660-common
 export VENDOR=asus
 

@@ -28,40 +28,35 @@
 #
 
 on boot
-    # Permissions for stk3x3x promiximity and light sensors
-    chmod 0644 /sys/class/sensors/stk3x3x-proximity/sensors_enable
-    chmod 0644 /sys/class/sensors/stk3x3x-proximity/sensors_delay
-    chmod 0644 /sys/class/sensors/stk3x3x-proximity/sensors_calibrate
-    chmod 0644 /sys/class/sensors/stk3x3x-proximity/sensors_enable_wakeup
-    chmod 0644 /sys/class/sensors/stk3x3x-proximity/sensors_flush
-    chmod 0644 /sys/class/sensors/stk3x3x-proximity/sensors_name
-    chown system system /sys/class/sensors/stk3x3x-proximity/sensors_enable
-    chown system system /sys/class/sensors/stk3x3x-proximity/sensors_delay
-    chown system system /sys/class/sensors/stk3x3x-proximity/sensors_calibrate
-    chown system system /sys/class/sensors/stk3x3x-proximity/sensors_enable_wakeup
-    chown system system /sys/class/sensors/stk3x3x-proximity/sensors_flush
-    chown system system /sys/class/sensors/stk3x3x-proximity/sensors_name
+    # Permissions for stk3x1x promiximity and light sensors
+    chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_enable
+    chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_delay
+    chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_calibrate
+    chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_enable_wakeup
+    chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_flush
+    chmod 0644 /sys/class/sensors/stk3x1x-proximity/sensors_name
+    chown system system /sys/class/sensors/stk3x1x-proximity/sensors_enable
+    chown system system /sys/class/sensors/stk3x1x-proximity/sensors_delay
+    chown system system /sys/class/sensors/stk3x1x-proximity/sensors_calibrate
+    chown system system /sys/class/sensors/stk3x1x-proximity/sensors_enable_wakeup
+    chown system system /sys/class/sensors/stk3x1x-proximity/sensors_flush
+    chown system system /sys/class/sensors/stk3x1x-proximity/sensors_name
 
-    chmod 0644 /sys/class/sensors/stk3x3x-light/sensors_enable
-    chmod 0644 /sys/class/sensors/stk3x3x-light/sensors_delay
-    chmod 0644 /sys/class/sensors/stk3x3x-light/sensors_calibrate
-    chmod 0644 /sys/class/sensors/stk3x3x-light/sensors_enable_wakeup
-    chmod 0644 /sys/class/sensors/stk3x3x-light/sensors_flush
-    chmod 0644 /sys/class/sensors/stk3x3x-light/sensors_name
-    chown system system /sys/class/sensors/stk3x3x-light/sensors_enable
-    chown system system /sys/class/sensors/stk3x3x-light/sensors_delay
-    chown system system /sys/class/sensors/stk3x3x-light/sensors_calibrate
-    chown system system /sys/class/sensors/stk3x3x-light/sensors_enable_wakeup
-    chown system system /sys/class/sensors/stk3x3x-light/sensors_flush
-    chown system system /sys/class/sensors/stk3x3x-light/sensors_name
+    chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_enable
+    chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_delay
+    chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_calibrate
+    chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_enable_wakeup
+    chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_flush
+    chmod 0644 /sys/class/sensors/stk3x1x-light/sensors_name
+    chown system system /sys/class/sensors/stk3x1x-light/sensors_enable
+    chown system system /sys/class/sensors/stk3x1x-light/sensors_delay
+    chown system system /sys/class/sensors/stk3x1x-light/sensors_calibrate
+    chown system system /sys/class/sensors/stk3x1x-light/sensors_enable_wakeup
+    chown system system /sys/class/sensors/stk3x1x-light/sensors_flush
+    chown system system /sys/class/sensors/stk3x1x-light/sensors_name
 
-    chown radio radio sys/module/stk3x3x/parameters/call_status_flag
+    chown radio radio sys/module/stk3x1x/parameters/call_status_flag
 
     # Tap to wake node
     chown system system /proc/tpd_gesture
     chmod 0660 /proc/tpd_gesture
-
-on post-fs-data
-    # Create directory for focaltech fingerprint
-    mkdir /data/vendor/focaltech 0760 system system
-    restorecon /data/vendor/focaltech
