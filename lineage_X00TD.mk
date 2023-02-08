@@ -26,8 +26,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE=ASUS_X00T \
-    PRODUCT_NAME=WW_X00T \
-    PRIVATE_BUILD_DESC="sdm660_64-user 10 QKQ1 72 release-keys"
-
-# Build fingerprint
-BUILD_FINGERPRINT := google/redfin/redfin:13/TQ1A.230105.001/9292298:user/release-keys
+    PRODUCT_NAME=WW_X00T
