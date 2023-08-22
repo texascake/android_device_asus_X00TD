@@ -305,13 +305,13 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage \
+    $(LOCAL_PATH)/overlay-qassa \
     $(LOCAL_PATH)/overlay-system
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage/lineage-sdk \
-    $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap \
+    $(LOCAL_PATH)/overlay-qassa/lineage-sdk \
+    $(LOCAL_PATH)/overlay-qassa/packages/apps/Snap \
     $(LOCAL_PATH)/overlay-system
 
 # Permissions
