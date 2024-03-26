@@ -14,6 +14,7 @@ rm -rf packages/apps/Updater
 rm -rf vendor/lineage
 rm -rf external/motorola/faceunlock
 rm -rf external/asus/stitchimage
+rm -rf system/core
 
 git clone --depth=1 https://github.com/lineageX00T/android_vendor_asus -b lineage-17.1 vendor/asus
 git clone --depth=1 https://github.com/aslenofarid/kernel_asus_sdm660 -b lineage-17.1 kernel/asus/sdm660
@@ -28,3 +29,4 @@ git clone --depth=1 https://github.com/lineageX00T/android_packages_apps_Updater
 git clone --depth=1 https://github.com/lineageX00T/android_vendor_lineage -b lineage-17.1 vendor/lineage
 git clone --depth=1 https://gitlab.com/rr-os/external_utils -b Q external/motorola/faceunlock
 git clone --depth=1 https://github.com/pixelexperience/external_asus_stitchimage -b ten-plus external/asus/stitchimage
+git clone --depth=1 https://github.com/AslenoLineageStuff/android_system_core -b lineage-17.1 system/core
