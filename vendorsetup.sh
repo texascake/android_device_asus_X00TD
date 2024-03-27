@@ -9,6 +9,7 @@ rm -rf device/asus/sdm660-common
 git clone https://github.com/Tiktodz/device_asus_X00T -b nad device/asus/X00T
 
 # Kernel
+rm -rf kernel/asus/sdm660
 git clone https://github.com/aslenofarid/kernel_asus_sdm660 -b lineage-17.1 kernel/asus/sdm660
 
 # LiveDisplay
