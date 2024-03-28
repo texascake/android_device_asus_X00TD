@@ -6,7 +6,7 @@ git clone https://github.com/lineageX00T/hardware_qcom-caf_msm8998_audio hardwar
 rm -rf device/asus/X00T
 rm -rf device/asus/X00TD
 rm -rf device/asus/sdm660-common
-git clone https://github.com/Tiktodz/device_asus_X00T -b nad device/asus/X00T
+git clone https://github.com/Tiktodz/device_asus_X00T -b lineage-17.1 device/asus/X00T
 
 # Kernel
 rm -rf kernel/asus/sdm660
