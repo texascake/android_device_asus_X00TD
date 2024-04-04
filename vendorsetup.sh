@@ -15,6 +15,7 @@ rm -rf vendor/lineage
 rm -rf external/motorola/faceunlock
 rm -rf external/asus/stitchimage
 rm -rf system/core
+rm -rf hardware/nad/interfaces
 
 git clone --depth=1 https://github.com/lineageX00T/android_vendor_asus -b lineage-17.1 vendor/asus
 git clone --depth=1 https://github.com/aslenofarid/kernel_asus_sdm660 -b lineage-17.1 kernel/asus/sdm660
