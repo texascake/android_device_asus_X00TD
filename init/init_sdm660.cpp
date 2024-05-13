@@ -36,8 +36,6 @@
 
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
-#include <sys/stat.h>
-#include <sys/types.h>
 #include <sys/_system_properties.h>
 
 #include "vendor_init.h"
@@ -81,64 +79,17 @@ void NFC_check()
         property_override("ro.hq.support.nfc", "0");
 }
 
-/* From Magisk@jni/magiskhide/hide_utils.c */
-static const char *snet_prop_key[] = {
-  "ro.boot.vbmeta.device_state",
-  "ro.boot.verifiedbootstate",
-  "ro.boot.flash.locked",
-  "ro.boot.veritymode",
-  "ro.boot.warranty_bit",
-  "ro.warranty_bit",
-  "ro.vendor.boot.warranty_bit",
-  "ro.vendor.warranty_bit",
-  "ro.is_ever_orange",
-  "ro.debuggable",
-  "ro.secure",
-  "ro.build.type",
-  "ro.build.tags",
-  NULL
-};
-
-static const char *snet_prop_value[] = {
-  "locked",
-  "green",
-  "1",
-  "enforcing",
-  "0",
-  "0",
-  "0",
-  "0",
-  "0",
-  "0",
-  "1",
-  "user",
-  "release-keys",
-  NULL
-};
-
-static void workaround_snet_properties() {
-    // Hide all sensitive props
-    for (int i = 0; snet_prop_key[i]; ++i) {
-        property_override(snet_prop_key[i], snet_prop_value[i]);
-    }
-}
-
-static void set_build_fingerprint(const char *fingerprint){
-    property_override("ro.bootimage.build.fingerprint", fingerprint);
-    property_override("ro.system.build.fingerprint", fingerprint);
-    property_override("ro.build.fingerprint", fingerprint);
-    property_override("ro.vendor.build.fingerprint", fingerprint);
-}
-
-static void set_build_description(const char *description){
-    property_override("ro.build.description", description);
-}
-
 void vendor_load_properties()
 {
     set_avoid_gfxaccel_config();
     NFC_check();
-    workaround_snet_properties();
-    set_build_fingerprint("google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
-    set_build_description("walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys");
+
+    // Safetynet Workaround
+    property_override("ro.boot.flash.locked", "1");
+    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.veritymode", "enforcing");
+    property_override("ro.boot.vbmeta.device_state", "locked");
+    property_override("ro.build.description", "walleye-user 8.1.0 OPM1.171019.011 4448085 release-keys");
+    property_override("ro.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+    property_override("ro.system.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 }
