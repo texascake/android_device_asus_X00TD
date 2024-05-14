@@ -155,6 +155,7 @@ ro.vendor.qti.sys.fw.bg_apps_limit=60
 # Radio
 persist.radio.multisim.config=dsds
 persist.radio.aosp_usr_pref_sel=true
+persist.vendor.radio.add_power_save=1
 persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.atfwd.start=true
 persist.vendor.radio.custom_ecc=1
