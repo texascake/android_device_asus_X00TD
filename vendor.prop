@@ -121,14 +121,10 @@ dalvik.vm.heapmaxfree=8m
 
 # Display
 debug.hwui.use_buffer_age=false
-debug.performance.tuning=1
 debug.sf.enable_hwc_vds=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.hw=1
 debug.sf.latch_unsignaled=1
-vendor.display.disable_partial_split=1
-vendor.display.disable_rotator_downscale=1
-vendor.display.perf_hint_window=50
 persist.hwc.mdpcomp.enable=true
 ro.opengles.version=196610
 vendor.display.disable_scaler=0
@@ -159,7 +155,7 @@ persist.backup.ntpServer=0.pool.ntp.org
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.qti.sys.fw.bg_apps_limit=60
+ro.vendor.qti.sys.fw.bg_apps_limit=32
 
 # Radio
 persist.radio.multisim.config=dsds
