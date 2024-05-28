@@ -2,6 +2,9 @@
 rm -rf hardware/qcom-caf/msm8998/audio
 git clone --depth=1 https://github.com/lineageX00T/hardware_qcom-caf_msm8998_audio hardware/qcom-caf/msm8998/audio
 
+rm -rf build/make
+git clone --depth=1 https://github.com/lineageX00T/nad_build -b 10 build/make
+
 # Device
 rm -rf device/asus/X00T
 rm -rf device/asus/X00TD
