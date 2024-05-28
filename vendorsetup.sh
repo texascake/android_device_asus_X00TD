@@ -36,6 +36,8 @@ rm -rf vendor/asus
 git clone --depth=1 https://github.com/Tiktodz/vendor_asus -b lineage-17.1 vendor/asus
 
 rm -rf vendor/lineage-priv
-git clone --depth=1 https://github.com/Kneba/vendor_lineage-priv -b 10 keymoment && mv keymoment/* vendor/ && rm -rf keymoment
+rm -rf vendor/extra
+git clone --depth=1 https://github.com/Kneba/vendor_lineage-priv -b 10 keymoment && cp -R keymoment/* vendor/ && rm -rf keymoment
+git clone --depth=1 https://github.com/Kneba/vendor_extra -b 10 vex && cp -R vex/* vendor/ && rm -rf vex
 
 export TZ=Asia/Jakarta
