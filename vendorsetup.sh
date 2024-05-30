@@ -35,6 +35,9 @@ git clone --depth=1 https://github.com/lineageX00T/android_system_core -b 10 sys
 rm -rf vendor/asus
 git clone --depth=1 https://github.com/Tiktodz/vendor_asus -b lineage-17.1 vendor/asus
 
+rm -rf vendor/nusantara
+git clone --depth=1 https://github.com/lineageX00T/android_vendor_nusantara -b 10 vendor/nusantara
+
 rm -rf vendor/lineage-priv
 #rm -rf vendor/extra
 git clone --depth=1 https://github.com/Kneba/vendor_lineage-priv -b 10 keymoment && cp -R keymoment/* vendor/ && rm -rf keymoment
