@@ -16,6 +16,7 @@ rm -rf external/motorola/faceunlock
 rm -rf external/asus/stitchimage
 rm -rf system/core
 rm -rf hardware/nad/interfaces
+rm -rf vendor/lineage-priv
 
 git clone --depth=1 https://github.com/lineageX00T/android_vendor_asus -b lineage-17.1 vendor/asus
 git clone --depth=1 https://github.com/aslenofarid/kernel_asus_sdm660 -b lineage-17.1 kernel/asus/sdm660
@@ -31,3 +32,4 @@ git clone --depth=1 https://github.com/lineageX00T/android_vendor_lineage -b lin
 git clone --depth=1 https://gitlab.com/rr-os/external_utils -b Q external/motorola/faceunlock
 git clone --depth=1 https://github.com/pixelexperience/external_asus_stitchimage -b ten-plus external/asus/stitchimage
 git clone --depth=1 https://github.com/lineageX00T/los_system_core -b lineage-17.1 system/core
+git clone --depth=1 https://github.com/Kneba/vendor_lineage-priv -b los keymoment && cp -R keymoment/* vendor/ && rm -rf keymoment
