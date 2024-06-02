@@ -4,9 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+-include vendor/lineage-priv/keys/keys.mk
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
