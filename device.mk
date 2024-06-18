@@ -4,8 +4,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
--include vendor/lineage-priv/keys/keys.mk
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
