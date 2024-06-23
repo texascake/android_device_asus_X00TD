@@ -91,7 +91,6 @@ ro.ril.power_collapse=1
 ro.vold.umsdirtyratio=20
 
 # Bluetooth
-persist.vendor.service.bdroid.sibs=false
 persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.qcom.bluetooth.soc=cherokee
 
