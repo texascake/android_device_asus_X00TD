@@ -82,14 +82,6 @@ vendor.audio.volume.headset.gain.depcal=true
 vendor.audio.tunnel.encode=false
 vendor.voice.path.for.pcm.voip=false
 
-# Battery Tweaks
-power.saving.mode=1
-pm.sleep_mode=1
-ro.ril.disable.power.collapse=0
-ro.ril.fast.dormancy.rule=0
-ro.ril.power_collapse=1
-ro.vold.umsdirtyratio=20
-
 # Bluetooth
 persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.qcom.bluetooth.soc=cherokee
@@ -154,7 +146,6 @@ persist.backup.ntpServer=0.pool.ntp.org
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.qti.sys.fw.bg_apps_limit=32
 
 # Radio
 persist.radio.multisim.config=dsds
