@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/conquer_X01BD.mk
+    $(LOCAL_DIR)/xdroid_X01BD.mk
 
 COMMON_LUNCH_CHOICES := \
-    conquer_X01BD-user \
-    conquer_X01BD-userdebug \
-    conquer_X01BD-eng
+    xdroid_X01BD-user \
+    xdroid_X01BD-userdebug \
+    xdroid_X01BD-eng

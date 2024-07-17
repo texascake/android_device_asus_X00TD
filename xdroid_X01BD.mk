@@ -9,20 +9,25 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common ConquerOS stuff.
-$(call inherit-product, vendor/conquer/config/common.mk)
+# Inherit some common xdCLO stuff
+$(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_BUILD_TYPE := STBL-4.4
+XDROID_BOOT_DARK := true
+XDROID_UI_BLUR := true
+
+# xd. Product spec
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_GAPPS_ARCH := arm64
+USE_GAPPS := true
 
 # Inherit from X01BD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# OFFICIAL
-CONQUER_BUILD_TYPE := OFFICIAL
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := conquer_X01BD
+PRODUCT_NAME := xdroid_X01BD
 PRODUCT_DEVICE := X01BD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := ASUS_X01BDA
