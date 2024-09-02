@@ -2,9 +2,6 @@
 # system.prop for sdm660
 #
 
-# Audio resampler
-af.resampler.quality=255
-
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
@@ -37,17 +34,22 @@ vendor.display.disable_skip_validate=1
 persist.sys.fingerauto=1
 persist.sys.iscdfinger_998eas=1
 
+# Fling
+ro.min.fling_velocity=160
+ro.max.fling_velocity=20000
+
 # GPS
 persist.vendor.overlay.izat.optin=rro
 
 # Graphics
-dev.pm.dyn_samplingrate=1
+debug.sf.disable_backpressure=1
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
 persist.sys.purgeable_assets=1
+persist.sys.NV_FPSLIMIT=60
 sdm.debug.disable_skip_validate=1
 
-#hwui properties
+# HWUI properties
 ro.hwui.texture_cache_size=72
 ro.hwui.layer_cache_size=48
 ro.hwui.r_buffer_cache_size=8
