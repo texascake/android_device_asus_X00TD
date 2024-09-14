@@ -114,11 +114,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
 
-# Charging
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
