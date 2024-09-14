@@ -89,7 +89,7 @@ void vendor_load_properties()
     property_override("ro.boot.verifiedbootstate", "green");
     property_override("ro.boot.veritymode", "enforcing");
     property_override("ro.boot.vbmeta.device_state", "locked");
-    property_override("ro.build.description", "coral-user 10 QQ3A.200705.002 6506677 release-keys");
-    property_override("ro.build.fingerprint", "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys");
-    property_override("ro.system.build.fingerprint", "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys");
+    property_override("ro.build.description", "coral-user 10 QQ3A.220905.004 8927612 release-keys");
+    property_override("ro.build.fingerprint", "google/coral/coral:10/QQ3A.220905.004/8927612:user/release-keys");
+    property_override("ro.system.build.fingerprint", "google/coral/coral:10/QQ3A.220905.004/8927612:user/release-keys");
 }
