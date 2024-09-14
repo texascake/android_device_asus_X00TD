@@ -2,6 +2,7 @@
 rm -rf hardware/qcom-caf/msm8998/audio
 git clone --depth=1 https://github.com/lineageX00T/hardware_qcom-caf_msm8998_audio hardware/qcom-caf/msm8998/audio
 
+# Build
 rm -rf build/make
 git clone --depth=1 https://github.com/lineageX00T/nad_build -b 10 build/make
 
@@ -17,7 +18,11 @@ git clone --depth=1 https://github.com/lineageX00T/frameworks_base -b 10 framewo
 
 # Kernel
 rm -rf kernel/asus/sdm660
-git clone --depth=1 https://github.com/aslenofarid/kernel_asus_sdm660 -b lineage-17.1 kernel/asus/sdm660
+git clone --depth=1 --recursive https://github.com/texascake/kernel_asus_sdm660 -b tom/hmp kernel/asus/sdm660
+rm -rf kernel/asus/sdm660/KernelSU/docs
+rm -rf kernel/asus/sdm660/KernelSU/scripts
+rm -rf kernel/asus/sdm660/KernelSU/userspace
+rm -rf kernel/asus/sdm660/KernelSU/website
 
 # LiveDisplay
 rm -rf hardware/lineage/livedisplay
@@ -35,9 +40,11 @@ git clone --depth=1 https://github.com/lineageX00T/android_system_core -b 10 sys
 rm -rf vendor/asus
 git clone --depth=1 https://github.com/Tiktodz/vendor_asus -b lineage-17.1 vendor/asus
 
+# Vendor nusantara
 rm -rf vendor/nusantara
 git clone --depth=1 https://github.com/lineageX00T/android_vendor_nusantara -b 10 vendor/nusantara
 
+# Vendor sign
 rm -rf vendor/lineage-priv
 #rm -rf vendor/extra
 git clone --depth=1 https://github.com/Kneba/vendor_lineage-priv -b 10 keymoment && cp -R keymoment/* vendor/ && rm -rf keymoment
