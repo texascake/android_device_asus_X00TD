@@ -10,7 +10,7 @@ git clone --depth=1 https://github.com/lineageX00T/nad_build -b 10 build/make
 rm -rf device/asus/X00T
 rm -rf device/asus/X00TD
 rm -rf device/asus/sdm660-common
-git clone --depth=1 https://github.com/lineageX00T/device_asus_X00T -b nad device/asus/X00T
+git clone --depth=1 https://github.com/texascake/android_device_asus_X00TD -b nad device/asus/X00T
 
 # Frameworks
 rm -rf frameworks/base
