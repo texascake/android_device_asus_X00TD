@@ -42,6 +42,7 @@ ro.max.fling_velocity=20000
 persist.vendor.overlay.izat.optin=rro
 
 # Graphics
+debug.sdm.support_writeback=0
 debug.sf.disable_backpressure=1
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
