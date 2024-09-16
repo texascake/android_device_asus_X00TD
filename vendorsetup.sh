@@ -6,7 +6,7 @@ rm -rf kernel/asus/sdm660/KernelSU/scripts
 rm -rf kernel/asus/sdm660/KernelSU/docs
 
 rm -rf bootable/deprecated-ota
-git clone git clone --depth=1 https://github.com/yaap/bootable_deprecated-ota bootable/deprecated-ota
+git clone --depth=1 https://github.com/yaap/bootable_deprecated-ota bootable/deprecated-ota
 
 rm -rf vendor/asus
 git clone --depth=1 https://github.com/Tiktodz/proprietary_vendor_asus-4.19 vendor/asus
