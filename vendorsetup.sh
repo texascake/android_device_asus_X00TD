@@ -1,5 +1,5 @@
 rm -rf kernel/asus/sdm660
-git clone --depth=1 --recursive https://github.com/texascake/android_kernel_asus_sdm660-4.19 kernel/asus/sdm660
+git clone --depth=1 --recursive https://github.com/Tiktodz/android_kernel_asus_sdm660 kernel/asus/sdm660
 rm -rf kernel/asus/sdm660/KernelSU/userspace
 rm -rf kernel/asus/sdm660/KernelSU/website
 rm -rf kernel/asus/sdm660/KernelSU/scripts
@@ -15,6 +15,5 @@ git clone --depth=1 https://github.com/texascake/android_device_asus_X00TD -b ev
 
 git clone https://github.com/inexdroid/keys sig && cp -R sig/* vendor/lineage/signing/keys/ && rm -rf sig
 
-export BUILD_USER=queen
-export BUILD_USERNAME=queen
+export KBUILD_BUILD_USER=queen
 export TZ=Asia/Jakarta
