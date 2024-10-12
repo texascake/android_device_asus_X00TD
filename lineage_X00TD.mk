@@ -8,17 +8,10 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common EverestOS stuff
+# Inherit some common lineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-EVEREST_BUILD_TYPE := OFFICIAL
-EVEREST_MAINTAINER := ∂σткιт
+SAKURA_MAINTAINER := ∂σткιт
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SUPPORTS_BLUR := true
-TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := false
-TARGET_USES_BLUR_RECENT := false
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
