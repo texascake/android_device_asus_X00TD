@@ -98,6 +98,9 @@ on boot
     setprop sys.usb.configfs 1
     write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
 
+    #Starting perf properly
+    setprop vendor.post_boot.parsed 1
+
 on boot && property:persist.vendor.usb.controller.default=*
     setprop vendor.usb.controller ${persist.vendor.usb.controller.default}
 
