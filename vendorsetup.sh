@@ -13,7 +13,7 @@ rm -rf kernel/asus/sdm660/KernelSU/docs
 rm -rf vendor/asus
 git clone --depth=1 https://github.com/texascake/proprietary_vendor_asus-4.19 vendor/asus
 
-git clone https://github.com/inexdroid/keys sig && cp -R sig/* vendor/after-priv/ && rm -rf sig
+git clone https://github.com/inexdroid/keys sig && cp -R sig/* vendor/after-priv/keys/ && rm -rf sig
 
 export KBUILD_BUILD_USER=queen
 export TZ=Asia/Jakarta
