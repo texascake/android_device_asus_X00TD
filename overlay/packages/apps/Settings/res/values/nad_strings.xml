@@ -13,7 +13,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="maintainer_name">∂σткιт</string>
+    <string name="maintainer">Lord</string>
+    <string name="maintainer_name">A gun G</string>
 
     <string name="ap_device_name">Device name</string>
     <string name="ap_device_name_summary">Asus Zenfone Max Pro M1</string>
