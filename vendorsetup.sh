@@ -52,7 +52,7 @@ git clone --depth=1 https://github.com/Tiktodz/vendor_asus -b lineage-17.1 vendo
 
 rm -rf vendor/qcom/opensource/commonsys/system/bt
 rm -rf vendor/qcom/opensource/commonsys/bluetooth_ext
-git clone --depth=1 https://github.com/keepQASSA/vendor_qcom_opensource_system_bt -b Q vendor/qcom/opensource/system/bt
+git clone --depth=1 https://github.com/keepQASSA/vendor_qcom_opensource_system_bt -b Q vendor/qcom/opensource/commonsys/system/bt
 git clone --depth=1 https://github.com/keepQASSA/vendor_qcom_opensource_bluetooth_ext -b Q vendor/qcom/opensource/commonsys/bluetooth_ext
 
 export TZ=Asia/Jakarta
