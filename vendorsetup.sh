@@ -50,9 +50,13 @@ git clone --depth=1 https://github.com/Tiktodz/vendor_asus -b lineage-17.1 vendo
 #git clone --depth=1 https://github.com/Kneba/vendor_lineage-priv -b 10 keymoment && cp -R keymoment/lineage-priv/keys/* vendor/nusantara/signing/keys/ && rm -rf keymoment
 #git clone --depth=1 https://github.com/Kneba/vendor_extra -b 10 vex && cp -R vex/* vendor/ && rm -rf vex
 
+rm -rf packages/apps/Bluetooth
+rm -rf vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 rm -rf vendor/qcom/opensource/commonsys/system/bt
 rm -rf vendor/qcom/opensource/commonsys/bluetooth_ext
 git clone --depth=1 https://github.com/keepQASSA/vendor_qcom_opensource_system_bt -b Q vendor/qcom/opensource/commonsys/system/bt
 git clone --depth=1 https://github.com/keepQASSA/vendor_qcom_opensource_bluetooth_ext -b Q vendor/qcom/opensource/commonsys/bluetooth_ext
+git clone --depth=1 https://github.com/keepQASSA/packages_apps_Bluetooth -b Q packages/apps/Bluetooth
+git clone --depth=1 https://github.com/keepQASSA/vendor_qcom_opensource_packages_apps_Bluetooth -b Q vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 
 export TZ=Asia/Jakarta
