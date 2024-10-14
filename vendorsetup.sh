@@ -47,7 +47,12 @@ git clone --depth=1 https://github.com/Tiktodz/vendor_asus -b lineage-17.1 vendo
 # Vendor sign
 rm -rf vendor/lineage-priv
 #rm -rf vendor/extra
-git clone --depth=1 https://github.com/Kneba/vendor_lineage-priv -b 10 keymoment && cp -R keymoment/* vendor/ && rm -rf keymoment
+git clone --depth=1 https://github.com/Kneba/vendor_lineage-priv -b 10 keymoment && cp -R keymoment/lineage-priv/keys/* vendor/nusantara/signing/keys/ && rm -rf keymoment
 #git clone --depth=1 https://github.com/Kneba/vendor_extra -b 10 vex && cp -R vex/* vendor/ && rm -rf vex
+
+rm -rf vendor/qcom/opensource/commonsys/system/bt
+rm -rf vendor/qcom/opensource/commonsys/bluetooth_ext
+git clone --depth=1 https://github.com/keepQASSA/vendor_qcom_opensource_system_bt -b Q vendor/qcom/opensource/system/bt
+git clone --depth=1 https://github.com/keepQASSA/vendor_qcom_opensource_bluetooth_ext -b Q vendor/qcom/opensource/commonsys/bluetooth_ext
 
 export TZ=Asia/Jakarta
