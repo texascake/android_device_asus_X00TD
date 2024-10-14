@@ -45,9 +45,9 @@ git clone --depth=1 https://github.com/Tiktodz/vendor_asus -b lineage-17.1 vendo
 #git clone --depth=1 https://github.com/lineageX00T/android_vendor_nusantara -b 10 vendor/nusantara
 
 # Vendor sign
-#rm -rf vendor/lineage-priv
+rm -rf vendor/lineage-priv
 #rm -rf vendor/extra
-#git clone --depth=1 https://github.com/Kneba/vendor_lineage-priv -b 10 keymoment && cp -R keymoment/lineage-priv/keys/* vendor/nusantara/signing/keys/ && rm -rf keymoment
+git clone --depth=1 https://github.com/Tiktodz/vendor -b 17.1 keymoment && cp -R keymoment/* vendor/ && rm -rf keymoment
 #git clone --depth=1 https://github.com/Kneba/vendor_extra -b 10 vex && cp -R vex/* vendor/ && rm -rf vex
 
 rm -rf packages/apps/Bluetooth
