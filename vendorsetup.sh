@@ -51,6 +51,7 @@ git clone --depth=1 https://github.com/Tiktodz/vendor_asus -b lineage-17.1 vendo
 #git clone --depth=1 https://github.com/Kneba/vendor_extra -b 10 vex && cp -R vex/* vendor/ && rm -rf vex
 
 rm -rf packages/apps/Bluetooth
+rm -rf system/bt
 rm -rf vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
 rm -rf vendor/qcom/opensource/commonsys/system/bt
 rm -rf vendor/qcom/opensource/commonsys/bluetooth_ext
@@ -58,5 +59,6 @@ git clone --depth=1 https://github.com/keepQASSA/vendor_qcom_opensource_system_b
 git clone --depth=1 https://github.com/keepQASSA/vendor_qcom_opensource_bluetooth_ext -b Q vendor/qcom/opensource/commonsys/bluetooth_ext
 git clone --depth=1 https://github.com/keepQASSA/packages_apps_Bluetooth -b Q packages/apps/Bluetooth
 git clone --depth=1 https://github.com/keepQASSA/vendor_qcom_opensource_packages_apps_Bluetooth -b Q vendor/qcom/opensource/commonsys/packages/apps/Bluetooth
+git clone --depth=1 https://github.com/keepQASSA/system_bt -b Q system/bt
 
 export TZ=Asia/Jakarta
