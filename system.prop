@@ -37,7 +37,13 @@ persist.sys.iscdfinger_998eas=1
 # GPS
 persist.vendor.overlay.izat.optin=rro
 
+# GPU
+rs.gpu.renderscript=0
+rs.gpu.filterscript=0
+rs.gpu.rsIntrinsic=0
+
 # Graphics
+debug.sf.disable_backpressure=1
 debug.sf.latch_unsignaled=0
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
